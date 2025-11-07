@@ -1,13 +1,18 @@
-public class Pessoa {
-    private String nome;
-    private long cpf;
-    private int idade;
 
-    public Pessoa(String nome, long cpf, int idade){
+
+public class Pessoa  {
+    protected  String nome;
+    protected String telefone;
+    protected String email;
+    protected String endereco;
+
+    public Pessoa(String nome, String telefone, String email, String endereco){
         this.nome = nome;
-        this.cpf = cpf;
-        this.idade = idade;
+        this.telefone = telefone;
+        this.email = email;
+        this.endereco = endereco;
     }
+
     public String getNome(){
         return nome;
     }
@@ -15,23 +20,27 @@ public class Pessoa {
         this.nome = nome;
     }
     
-    public long getCpf(){
-        return cpf;
+    public String getTelefone(){
+        return telefone;
     }
     
-    public void setCpf(long cpf){
-        this.cpf = cpf;
+    public void setTelefone(String telefone){
+        this.telefone = telefone;
     }
     
-    public int getIdade(){
-        return idade;
+    public String getEmail(){
+        return email;
     }
     
-    public void setIdade(int idade){
-        this.idade = idade;
+    public void setEmail(String email){
+        this.email = email;
     }
-    @Override
-    public String toString(){
-        return "Pessoa [nome=" + nome + ", cpf=" + cpf + ", idade=" + idade + "]";
+    
+    public String getEndereco(){
+        return endereco;
+    }
+    
+    public void setEndereco(String endereco){
+        this.endereco = endereco;
     }
 }

@@ -38,22 +38,6 @@ public class Main {
                     int idade = sc.nextInt();
                     c.adicionarPessoa(new Pessoa(nomePessoa, cpf, idade));
                     break;
-                case 4:
-                    c.listarPessoas();
-                    break;
-                case 5:
-                    System.out.print("Digite o número da nota fiscal: ");
-                    long notaFiscal = sc.nextLong();
-                    System.out.print("Digite o valor total da venda: ");
-                    double valorTotal = sc.nextDouble();
-                    Venda venda = new Venda(notaFiscal, valorTotal);
-                    c.adicionarVenda(venda);
-                    System.out.println("Venda registrada com sucesso!");
-                    break;
-                case 6:
-                    double totalVendas = c.calcularTotalVendas();
-                    System.out.println("Total de vendas: R$ " + String.format("%.2f", totalVendas));
-                    break;
                 case 0:
                     System.out.println("Saindo...");
                     break;

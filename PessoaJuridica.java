@@ -4,7 +4,7 @@ public class PessoaJuridica extends Pessoa {
     private String razaoSocial;
 
     public PessoaJuridica(String nome, String telefone, String email, String endereco, 
-                         String cnpj, String inscricaoEstadual, String razaoSocial) {
+                        String cnpj, String inscricaoEstadual, String razaoSocial) {
         super(nome, telefone, email, endereco);
         this.cnpj = cnpj;
         this.inscricaoEstadual = inscricaoEstadual;

@@ -10,7 +10,7 @@ public class Processo {
     private Advogado advogadoResponsavel;
 
     public Processo(String numeroProcesso, String descricao, Date dataAbertura, 
-                   PessoaFisica autor, Pessoa reu, Advogado advogadoResponsavel) {
+                    PessoaFisica autor, Pessoa reu, Advogado advogadoResponsavel) {
         this.numeroProcesso = numeroProcesso;
         this.descricao = descricao;
         this.dataAbertura = dataAbertura;

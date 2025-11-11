@@ -136,7 +136,7 @@ public class Main {
         String endereco = lerString("Endereço: ");
 
         PessoaJuridica pj = new PessoaJuridica(nomeFantasia, telefone, email, endereco, 
-                                             cnpj, inscricaoEstadual, razaoSocial);
+                                                cnpj, inscricaoEstadual, razaoSocial);
         pessoasJuridicas.add(pj);
         System.out.println("\nPessoa Jurídica cadastrada com sucesso!");
     }
